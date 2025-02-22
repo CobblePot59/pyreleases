@@ -1,0 +1,6 @@
+#!/bin/bash
+set -e
+
+systemctl daemon-reload
+systemctl enable ${app_name}
+systemctl start ${app_name}

@@ -1,0 +1,11 @@
+services:
+  app:
+    build:
+      context: .
+    image: ${app_name}
+    container_name: ${app_name}
+    restart: always
+    ports:
+      - ${port}:${port}
+    volumes:
+      - ./volumes/app:/opt/${app_name}

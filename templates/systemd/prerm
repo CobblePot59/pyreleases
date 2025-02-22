@@ -1,0 +1,5 @@
+#!/bin/bash
+set -e
+
+systemctl stop ${app_name}
+systemctl disable ${app_name}
